@@ -52,6 +52,7 @@
 | หน้าเริ่มต้นเหมือนกัน: แม่แบบ ฉบับร่างในเบราว์เซอร์ เปิดไฟล์ ตัวเลือก | The same start screen: templates, drafts kept in the browser, Open file, Options |
 | งานเปิดในแท็บใหม่ หน้าเริ่มต้นยังอยู่ที่เดิม | Each document opens in a new tab; the start screen stays where it is |
 | ฉบับร่างเก็บในเบราว์เซอร์ของคุณเท่านั้น ไฟล์ไม่ถูกส่งไปที่ใด | Drafts are kept in your own browser only; your files are not uploaded anywhere |
+| ไอคอนชุดเดียวกันและริบบิ้นขนาดเดียวกันทุกโปรแกรม | One icon set and one ribbon layout in every app |
 | ธีมสว่างและธีมมืด | Light and dark themes |
 | ตั้งค่าภาษาครั้งเดียว โปรแกรมจำไว้ให้ | Choose the language once; the app remembers it |
 
@@ -80,19 +81,20 @@
 <table>
 <tr>
 <td width="50%" valign="top"><img src="images/phutkrub-start.png" alt="The PhutKrub start screen in Thai: a top bar with เปิดไฟล์, ตัวเลือก and the app switcher, the greeting สวัสดีครับ จะนำเสนออะไรดีครับ, theme thumbnails, drafts in this browser and starter decks" width="100%"><p align="center"><sub><b>หน้าเริ่มต้น / Start screen</b></sub></p></td>
-<td width="50%" valign="top"><img src="images/phutkrub-editor.png" alt="PhutKrub with Thai menus: the coral band with a gold Present button, the slide thumbnails and the sample deck Northern Lights" width="100%"><p align="center"><sub><b>แก้ไขสไลด์ / Editing slides</b></sub></p></td>
+<td width="50%" valign="top"><img src="images/phutkrub-editor.png" alt="PhutKrub with Thai menus and the new icons: the coral band with a gold Present button, the slide thumbnails and the sample deck Northern Lights" width="100%"><p align="center"><sub><b>แก้ไขสไลด์ / Editing slides</b></sub></p></td>
 </tr>
 </table>
 
 - สร้างสไลด์จากธีมและชุดสไลด์เริ่มต้น ใส่รูปร่าง รูปภาพ ตาราง แผนภูมิ / Start from themes and starter decks; add shapes, pictures, tables and charts
 - เอฟเฟกต์การเปลี่ยนสไลด์และภาพเคลื่อนไหว นำเสนอเต็มจอ / Transitions, animations and a full-screen slide show
 - เปิดและบันทึกไฟล์ PowerPoint (`.pptx`) / Open and save `.pptx`
+- จัดข้อความแบบกระจายไทย (ปุ่มตัว ท) / Thai Distribution (the ท button)
 - สไลด์ใหม่ใช้ TH Sarabun New / New slides use TH Sarabun New
 
 <table>
 <tr>
 <td width="60%" valign="top"><img src="images/phutkrub-dark.png" alt="PhutKrub in the dark theme: a deep coral band, dark panes and the sample deck" width="100%"><p align="center"><sub><b>ธีมมืด / Dark theme.</b> เมนูและแถบเครื่องมือเป็นสีเข้ม สไลด์ยังขาวเหมือนตอนนำเสนอ / Menus and panes go dark; the slide stays as it will be shown.</sub></p></td>
-<td width="40%" valign="top"><img src="images/phutkrub-loading.png" alt="The PhutKrub loading screen: a gold พ on coral with the name พูดครับ and a gold loading bar" width="100%"><p align="center"><sub><b>หน้ารอเปิดโปรแกรม / Loading screen.</b> ครั้งแรกอาจใช้เวลาสักครู่ / The first visit can take a moment.</sub></p></td>
+<td width="40%" valign="top"><img src="images/phutkrub-loading.png" alt="The PhutKrub loading screen: a glass gold พ on coral with the name พูดครับ and a gold loading bar" width="100%"><p align="center"><sub><b>หน้ารอเปิดโปรแกรม / Loading screen.</b> ครั้งแรกอาจใช้เวลาสักครู่ / The first visit can take a moment.</sub></p></td>
 </tr>
 </table>
 
@@ -101,7 +103,7 @@
 <table>
 <tr>
 <td width="50%" valign="top"><img src="images/khitkrub-start.png" alt="The KhitKrub start screen in Thai: a top bar with เปิดไฟล์, ตัวเลือก and the app switcher, the greeting สวัสดีครับ วันนี้จะทำงานอะไรดี, the new-workbook tiles and drafts kept in this browser" width="100%"><p align="center"><sub><b>หน้าเริ่มต้น / Start screen</b></sub></p></td>
-<td width="50%" valign="top"><img src="images/khitkrub-editor.png" alt="KhitKrub with Thai menus: the teal band, the white active tab joined to the ribbon, and the Thai sample workbook ยอดขายร้านกาแฟ, a coffee shop's sales in baht, with a data bar, a colour scale and a chart" width="100%"><p align="center"><sub><b>ตารางคำนวณ / A spreadsheet</b></sub></p></td>
+<td width="50%" valign="top"><img src="images/khitkrub-editor.png" alt="KhitKrub with Thai menus and the new icons: the teal band, the white active tab joined to the ribbon, and the Thai sample workbook ยอดขายร้านกาแฟ, a coffee shop's sales in baht, with a data bar, a colour scale and a chart" width="100%"><p align="center"><sub><b>ตารางคำนวณ / A spreadsheet</b></sub></p></td>
 </tr>
 </table>
 
@@ -113,11 +115,32 @@
 <table>
 <tr>
 <td width="60%" valign="top"><img src="images/khitkrub-dark.png" alt="KhitKrub in the dark theme: a deep teal band, dark panes and the Thai sample workbook" width="100%"><p align="center"><sub><b>ธีมมืด / Dark theme.</b> ตารางยังขาวเหมือนตอนพิมพ์ / The sheet stays white, as it will print.</sub></p></td>
-<td width="40%" valign="top"><img src="images/khitkrub-loading.png" alt="The KhitKrub loading screen: a gold ค on teal with the name คิดครับ and a gold loading bar" width="100%"><p align="center"><sub><b>หน้ารอเปิดโปรแกรม / Loading screen.</b> ครั้งแรกอาจใช้เวลาสักครู่ / The first visit can take a moment.</sub></p></td>
+<td width="40%" valign="top"><img src="images/khitkrub-loading.png" alt="The KhitKrub loading screen: a glass gold ค on teal with the name คิดครับ and a gold loading bar" width="100%"><p align="center"><sub><b>หน้ารอเปิดโปรแกรม / Loading screen.</b> ครั้งแรกอาจใช้เวลาสักครู่ / The first visit can take a moment.</sub></p></td>
 </tr>
 </table>
 
 ## มีอะไรใหม่ / What's new
+
+**1 พฤศจิกายน 2569 (ไอคอนชุดใหม่) / 1 November 2026 (new icons)**
+
+- **ไอคอนชุดใหม่ใช้ร่วมกันทั้งสามโปรแกรม** ไอคอนบนริบบิ้นวาดใหม่ทั้งชุด เส้นสีเข้มอ่านง่าย แต้มสีทองเฉพาะส่วนสำคัญ ปุ่มเดียวกันจึงหน้าตาเหมือนกันทั้งเขียนครับ พูดครับ และคิดครับ / **One new icon set for all three apps.** Every ribbon icon is redrawn with dark, easy-to-read lines and a touch of gold where it matters, so the same button looks the same in KhianKrub, PhutKrub and KhitKrub.
+- **ริบบิ้นแบบเดียวกัน** พูดครับและคิดครับใช้ขนาดริบบิ้นของเขียนครับ ไอคอนใหญ่ขึ้น ปุ่มเรียงกึ่งกลาง / **One ribbon layout.** PhutKrub and KhitKrub now use KhianKrub's ribbon: larger icons, centred buttons.
+- **พูดครับจัดข้อความแบบกระจายไทยได้** ปุ่มตัว ท ถัดจากปุ่มจัดชิดขอบทั้งสองด้าน กระจายระยะระหว่างตัวอักษรไทยให้เต็มบรรทัด บันทึกลงไฟล์ `.pptx` ได้ เขียนครับมีความสามารถนี้อยู่แล้วและได้ไอคอน ท เหมือนกัน / **Thai Distribution in PhutKrub.** A ท button next to Justify spreads the space between Thai letters to fill each line, and is saved in `.pptx`. KhianKrub already had it and gets the same ท icon.
+- **โลโก้แบบกระจก** ตัว ข ค พ สีทองมีประกายแบบกระจก ที่หน้ารอเปิดโปรแกรมและหน้าเริ่มต้นของแต่ละโปรแกรม / **Glass logos.** A gold ข, ค and พ with a glass shine on each app's loading and start screens.
+
+<p align="center">
+  <img src="images/khiankrub-ribbon.png" alt="KhianKrub's Home tab with the new icons: navy band, the Paste, font and paragraph groups, with the ท Thai Distribution button" width="100%">
+  <img src="images/phutkrub-ribbon.png" alt="PhutKrub's Home tab with the new icons: coral band, the Paste, slides, font and paragraph groups, with the new ท Thai Distribution button after Justify" width="100%">
+  <img src="images/khitkrub-ribbon.png" alt="KhitKrub's Home tab with the new icons: teal band, the Paste, font, alignment and number groups, Conditional Formatting and Format as Table" width="100%">
+</p>
+
+<table>
+<tr>
+<td width="33%" valign="top"><img src="images/khiankrub-loading.png" alt="The KhianKrub loading screen: a glass gold ข on navy" width="100%"><p align="center"><sub><b>เขียนครับ</b></sub></p></td>
+<td width="33%" valign="top"><img src="images/phutkrub-loading.png" alt="The PhutKrub loading screen: a glass gold พ on coral" width="100%"><p align="center"><sub><b>พูดครับ</b></sub></p></td>
+<td width="33%" valign="top"><img src="images/khitkrub-loading.png" alt="The KhitKrub loading screen: a glass gold ค on teal" width="100%"><p align="center"><sub><b>คิดครับ</b></sub></p></td>
+</tr>
+</table>
 
 **1 พฤศจิกายน 2569 / 1 November 2026**
 
