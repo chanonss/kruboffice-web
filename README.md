@@ -8,10 +8,10 @@
 
 **Free Thai office apps in the browser. Nothing to install, no account to make.**
 
-**[เปิด / Open kruboffice.app](https://kruboffice.app/)** · [เขียนครับ · KhianKrub](https://khiankrub.app/) · [พูดครับ · PhutKrub](https://phutkrub.app/)
+**[เปิด / Open kruboffice.app](https://kruboffice.app/)** · [เขียนครับ · KhianKrub](https://khiankrub.app/) · [พูดครับ · PhutKrub](https://phutkrub.app/) · [คิดครับ · KhitKrub](https://khitkrub.app/)
 
 <p align="center">
-  <img src="images/kruboffice-launcher.png" alt="The KrubOffice page: the three-tile logo, the greeting วันนี้ ...อยากทำอะไรดีครับ?, and the app icons: เขียนครับ (a gold ข on navy), the faded คิดครับ marked รอว่างก่อนนะครับ, and พูดครับ (a gold พ on coral)" width="100%">
+  <img src="images/kruboffice-launcher.png" alt="The KrubOffice page: the three-tile logo, the greeting วันนี้ ...อยากทำอะไรดีครับ?, and the app icons: เขียนครับ (a gold ข on navy), คิดครับ (a gold ค on teal) and พูดครับ (a gold พ on coral)" width="100%">
 </p>
 
 ## โปรแกรมในชุด / The apps
@@ -20,7 +20,7 @@
 |---|---|---|---|
 | **เขียนครับ · KhianKrub** | พิมพ์เอกสาร เปิดและบันทึกไฟล์ Word (`.docx`) / Word processor, opens and saves `.docx` | [WordCraft](https://github.com/storytold/wordcraft) | ใช้ได้แล้ว / Available: **[khiankrub.app](https://khiankrub.app/)** |
 | **พูดครับ · PhutKrub** | ทำงานนำเสนอ เปิดและบันทึกไฟล์ PowerPoint (`.pptx`) / Presentations, opens and saves `.pptx` | [DeckCraft](https://github.com/storytold/deckcraft) | ใช้ได้แล้ว / Available: **[phutkrub.app](https://phutkrub.app/)** |
-| **คิดครับ · KhitKrub** | ตารางคำนวณ / Spreadsheets | [GridCraft](https://github.com/storytold/gridcraft) (planned) | รอว่างก่อนนะครับ / Coming later |
+| **คิดครับ · KhitKrub** | ตารางคำนวณ เปิดและบันทึกไฟล์ Excel (`.xlsx`) / Spreadsheets, opens and saves `.xlsx` | [GridCraft](https://github.com/storytold/gridcraft) | ใช้ได้แล้ว / Available: **[khitkrub.app](https://khitkrub.app/)** |
 
 ใช้ได้ฟรีบนคอมพิวเตอร์และ iPad ยังไม่รองรับโทรศัพท์มือถือ / Free on computers and iPads; phones aren't supported yet.
 
@@ -29,20 +29,20 @@
 **ภาษาไทย** KrubOffice ไม่ได้เริ่มจากศูนย์ครับ ทุกโปรแกรมพัฒนาต่อยอดจากโปรแกรมโอเพนซอร์สของโครงการ **[ArtCraft](https://github.com/storytold)** ซึ่งเป็นชุด "Crafting Apps" ที่ทีม ArtCraft เขียนขึ้นใหม่ทั้งหมดด้วยภาษา Rust (แบบ clean-room คือเขียนจากการใช้งาน ไม่คัดลอกโค้ดหรือหน้าตาของโปรแกรมเชิงพาณิชย์) และเผยแพร่ภายใต้สัญญาอนุญาต MIT หรือ Apache-2.0 เราเก็บสัญญาอนุญาตและเครดิตของเขาไว้ครบ แล้วปรับให้เหมาะกับผู้ใช้ภาษาไทย:
 
 - **เมนูและข้อความเป็นภาษาไทย** เปิดครั้งแรกเป็นภาษาไทย สลับเป็นภาษาอังกฤษได้ในคลิกเดียว
-- **ฟอนต์ไทย** เมนูใช้ Sarabun งานใหม่ใช้ TH Sarabun New เป็นค่าเริ่มต้น
-- **หน้าตาแบบ KrubOffice** แถบด้านบนสีประจำแอป (กรมท่าของเขียนครับ ส้มอิฐของพูดครับ) ไฮไลต์สีทอง
+- **ฟอนต์ไทย** เมนูใช้ Sarabun งานใหม่ในเขียนครับและพูดครับใช้ TH Sarabun New เป็นค่าเริ่มต้น ส่วนคิดครับใช้ TH Sarabun New วาดตัวอักษรไทยในเซลล์
+- **หน้าตาแบบ KrubOffice** แถบด้านบนสีประจำแอป (กรมท่าของเขียนครับ ส้มอิฐของพูดครับ เขียวอมน้ำเงินของคิดครับ) ไฮไลต์สีทอง
 - **หน้าเริ่มต้นและฉบับร่างในเบราว์เซอร์** เลือกแม่แบบ หรือเขียนต่อจากฉบับร่างที่ค้างไว้
 - เขียนครับยังมี **การตัดคำไทย** **การจัดข้อความแบบกระจายไทย** รายการเลขไทย และฟอนต์ SIPA / TLWG
 
 **English** KrubOffice did not start from scratch. Each app is a Thai adaptation of an open-source app from **[ArtCraft](https://github.com/storytold)**'s "Crafting Apps", which the ArtCraft team wrote from scratch in Rust (clean-room: built from how such programs are used, not from any commercial program's code or look) and released under MIT or Apache-2.0. We keep their licences and credits and adapt the apps for Thai users:
 
 - **Thai menus and text**: the apps open in Thai on a first visit and switch to English in one click.
-- **Thai fonts**: Sarabun for menus, TH Sarabun New as the default for new work.
-- **A KrubOffice look**: a top band in each app's own colour (navy for KhianKrub, coral for PhutKrub) with gold highlights.
+- **Thai fonts**: Sarabun for menus; new work in KhianKrub and PhutKrub defaults to TH Sarabun New, while KhitKrub uses TH Sarabun New to draw Thai letters in cells.
+- **A KrubOffice look**: a top band in each app's own colour (navy for KhianKrub, coral for PhutKrub, teal for KhitKrub) with gold highlights.
 - **A start screen with browser drafts**: pick a template, or carry on with a draft kept in the browser.
 - KhianKrub also has **Thai word breaking**, **Thai Distribution** justification, Thai list numbering and the SIPA / TLWG fonts.
 
-เขียนครับและพูดครับไม่ใช่ผลิตภัณฑ์ของ ArtCraft และไม่เกี่ยวข้องกับ Microsoft / KhianKrub and PhutKrub are not ArtCraft products and are not affiliated with Microsoft. The Thai adaptations are by **Chanon Sarasuk**.
+เขียนครับ พูดครับ และคิดครับไม่ใช่ผลิตภัณฑ์ของ ArtCraft และไม่เกี่ยวข้องกับ Microsoft / KhianKrub, PhutKrub and KhitKrub are not ArtCraft products and are not affiliated with Microsoft. The Thai adaptations are by **Chanon Sarasuk**.
 
 ## สิ่งที่ใช้ร่วมกัน / What the apps share
 
@@ -98,16 +98,38 @@
 
 ### คิดครับ · KhitKrub
 
-ตารางคำนวณ รอว่างก่อนนะครับ / Spreadsheets: coming later.
+<table>
+<tr>
+<td width="50%" valign="top"><img src="images/khitkrub-start.png" alt="The KhitKrub start screen in Thai: a top bar with เปิดไฟล์, ตัวเลือก and the app switcher, the greeting สวัสดีครับ วันนี้จะทำงานอะไรดี, the new-workbook tiles and drafts kept in this browser" width="100%"><p align="center"><sub><b>หน้าเริ่มต้น / Start screen</b></sub></p></td>
+<td width="50%" valign="top"><img src="images/khitkrub-editor.png" alt="KhitKrub with Thai menus: the teal band, the white active tab joined to the ribbon, and the Thai sample workbook ยอดขายร้านกาแฟ, a coffee shop's sales in baht, with a data bar, a colour scale and a chart" width="100%"><p align="center"><sub><b>ตารางคำนวณ / A spreadsheet</b></sub></p></td>
+</tr>
+</table>
+
+- สูตรและฟังก์ชันกว่า 500 ตัว แผนภูมิ ตารางสรุปข้อมูล การจัดรูปแบบตามเงื่อนไข / 500+ functions, charts, pivot tables and conditional formatting
+- เปิดและบันทึกไฟล์ Excel (`.xlsx`) และ CSV / Open and save `.xlsx` and CSV
+- ตัวอักษรไทยในเซลล์ใช้ TH Sarabun New ตัวเลขและอังกฤษใช้ฟอนต์เริ่มต้น / Thai letters in cells use TH Sarabun New; Latin text and numbers keep the default font
+- รุ่นแรก: ชื่อฟังก์ชันในสูตรยังเป็นภาษาอังกฤษ ยังไม่มีเลขไทย วันที่ พ.ศ. หรือการอ่านจำนวนเงินเป็นตัวอักษร / First release: function names stay English; no Thai digits, Buddhist-era dates or baht-in-words yet
+
+<table>
+<tr>
+<td width="60%" valign="top"><img src="images/khitkrub-dark.png" alt="KhitKrub in the dark theme: a deep teal band, dark panes and the Thai sample workbook" width="100%"><p align="center"><sub><b>ธีมมืด / Dark theme.</b> ตารางยังขาวเหมือนตอนพิมพ์ / The sheet stays white, as it will print.</sub></p></td>
+<td width="40%" valign="top"><img src="images/khitkrub-loading.png" alt="The KhitKrub loading screen: a gold ค on teal with the name คิดครับ and a gold loading bar" width="100%"><p align="center"><sub><b>หน้ารอเปิดโปรแกรม / Loading screen.</b> ครั้งแรกอาจใช้เวลาสักครู่ / The first visit can take a moment.</sub></p></td>
+</tr>
+</table>
 
 ## มีอะไรใหม่ / What's new
+
+**1 พฤศจิกายน 2569 / 1 November 2026**
+
+- **คิดครับ (KhitKrub) เปิดให้ใช้แล้ว** ที่ [khitkrub.app](https://khitkrub.app/) เมนูไทย ฟอนต์ไทย แถบด้านบนสีเขียวอมน้ำเงิน ไฮไลต์สีทอง หน้าเริ่มต้นพร้อมฉบับร่างในเบราว์เซอร์ / **KhitKrub is available** at [khitkrub.app](https://khitkrub.app/): Thai menus and fonts, a teal top band with gold highlights, and a start screen with browser drafts.
+- **หน้า KrubOffice** มีไอคอนคิดครับพร้อมใช้ และปุ่มสลับแอปในทุกโปรแกรมพาไปยังคิดครับได้ / **The KrubOffice page** now has KhitKrub's icon ready to open, and every app's switcher leads to it.
 
 **31 ตุลาคม 2569 / 31 October 2026**
 
 - **พูดครับ (PhutKrub) เปิดให้ใช้แล้ว** ที่ [phutkrub.app](https://phutkrub.app/) เมนูไทย ฟอนต์ไทย แถบด้านบนสีส้มอิฐ ไฮไลต์สีทอง หน้าเริ่มต้นพร้อมฉบับร่างในเบราว์เซอร์ / **PhutKrub is available** at [phutkrub.app](https://phutkrub.app/): Thai menus and fonts, a coral top band with gold highlights, and a start screen with browser drafts.
 - **หน้า KrubOffice** มีไอคอนพูดครับพร้อมใช้ และปุ่มสลับแอปในพูดครับพาไปยังเขียนครับได้ / **The KrubOffice page** now has PhutKrub's icon ready to open, and PhutKrub's app switcher leads to KhianKrub.
 
-ประวัติรุ่นของแต่ละโปรแกรมอยู่ที่หน้า Releases ของ [khiankrub-web](https://github.com/chanonss/khiankrub-web/releases) และ [phutkrub-web](https://github.com/chanonss/phutkrub-web/releases) / Each app's release history is on its Releases page.
+ประวัติรุ่นของแต่ละโปรแกรมอยู่ที่หน้า Releases ของ [khiankrub-web](https://github.com/chanonss/khiankrub-web/releases), [phutkrub-web](https://github.com/chanonss/phutkrub-web/releases) และ [khitkrub-web](https://github.com/chanonss/khitkrub-web/releases) / Each app's release history is on its Releases page.
 
 ## เริ่มใช้งาน / Getting started
 
