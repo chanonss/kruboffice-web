@@ -11,7 +11,7 @@
 **[เปิด / Open kruboffice.app](https://kruboffice.app/)** · [เขียนครับ · KhianKrub](https://khiankrub.app/) · [พูดครับ · PhutKrub](https://phutkrub.app/) · [คิดครับ · KhitKrub](https://khitkrub.app/)
 
 <p align="center">
-  <img src="images/kruboffice-launcher.png" alt="The KrubOffice page: the three-tile logo, the greeting วันนี้ ...อยากทำอะไรดีครับ?, and the app icons: เขียนครับ (a gold ข on navy), คิดครับ (a gold ค on teal) and พูดครับ (a gold พ on coral)" width="100%">
+  <img src="images/kruboffice-launcher.png" alt="The KrubOffice page: the three-tile logo, the greeting วันนี้ ...อยากทำอะไรดีครับ?, and the glass app icons: เขียนครับ (a gold ข on navy), คิดครับ (a gold ค on teal) and พูดครับ (a gold พ on coral)" width="100%">
 </p>
 
 ## โปรแกรมในชุด / The apps
@@ -94,7 +94,7 @@
 <table>
 <tr>
 <td width="60%" valign="top"><img src="images/phutkrub-dark.png" alt="PhutKrub in the dark theme: a deep coral band, dark panes and the sample deck" width="100%"><p align="center"><sub><b>ธีมมืด / Dark theme.</b> เมนูและแถบเครื่องมือเป็นสีเข้ม สไลด์ยังขาวเหมือนตอนนำเสนอ / Menus and panes go dark; the slide stays as it will be shown.</sub></p></td>
-<td width="40%" valign="top"><img src="images/phutkrub-loading.png" alt="The PhutKrub loading screen: a glass gold พ on coral with the name พูดครับ and a gold loading bar" width="100%"><p align="center"><sub><b>หน้ารอเปิดโปรแกรม / Loading screen.</b> ครั้งแรกอาจใช้เวลาสักครู่ / The first visit can take a moment.</sub></p></td>
+<td width="40%" valign="top"><img src="images/phutkrub-loading.png" alt="The PhutKrub loading screen: a glass gold พ on coral, with a gold sheet and a coral sheet flying in behind it with the name พูดครับ and a gold loading bar" width="100%"><p align="center"><sub><b>หน้ารอเปิดโปรแกรม / Loading screen.</b> ครั้งแรกอาจใช้เวลาสักครู่ / The first visit can take a moment.</sub></p></td>
 </tr>
 </table>
 
@@ -115,11 +115,17 @@
 <table>
 <tr>
 <td width="60%" valign="top"><img src="images/khitkrub-dark.png" alt="KhitKrub in the dark theme: a deep teal band, dark panes and the Thai sample workbook" width="100%"><p align="center"><sub><b>ธีมมืด / Dark theme.</b> ตารางยังขาวเหมือนตอนพิมพ์ / The sheet stays white, as it will print.</sub></p></td>
-<td width="40%" valign="top"><img src="images/khitkrub-loading.png" alt="The KhitKrub loading screen: a glass gold ค on teal with the name คิดครับ and a gold loading bar" width="100%"><p align="center"><sub><b>หน้ารอเปิดโปรแกรม / Loading screen.</b> ครั้งแรกอาจใช้เวลาสักครู่ / The first visit can take a moment.</sub></p></td>
+<td width="40%" valign="top"><img src="images/khitkrub-loading.png" alt="The KhitKrub loading screen: a glass gold ค on teal, with a gold sheet and a teal sheet flying in behind it with the name คิดครับ and a gold loading bar" width="100%"><p align="center"><sub><b>หน้ารอเปิดโปรแกรม / Loading screen.</b> ครั้งแรกอาจใช้เวลาสักครู่ / The first visit can take a moment.</sub></p></td>
 </tr>
 </table>
 
 ## มีอะไรใหม่ / What's new
+
+**2 พฤศจิกายน 2569 / 2 November 2026**
+
+- **หน้า KrubOffice ใช้ไอคอนแบบกระจกชุดใหม่** ตัว ข ค พ สีทองแบบเดียวกับโลโก้ของแต่ละโปรแกรม / **The KrubOffice page has the new glass icons**: the same gold ข, ค and พ as each app's logo.
+- **กรอบสีของแต่ละโปรแกรม** เมื่อชี้หรือเลือกไอคอน กรอบรอบไอคอนเป็นสีของโปรแกรมนั้น สีกรมท่าสำหรับเขียนครับ สีเขียวอมน้ำเงินสำหรับคิดครับ และสีส้มอิฐสำหรับพูดครับ / **Each app's own ring.** Pointing at or selecting an icon draws a ring in that app's colour: navy for KhianKrub, teal for KhitKrub and coral for PhutKrub.
+- **ภาพเคลื่อนไหวขณะรอเปิดโปรแกรม** พูดครับและคิดครับมีแผ่นสีทองกับแผ่นสีของโปรแกรมลอยเข้ามาซ้อนหลังโลโก้ แบบเดียวกับเขียนครับ / **A loading animation** in PhutKrub and KhitKrub: a gold sheet and a sheet in the app's colour fly in behind the logo, as in KhianKrub.
 
 **1 พฤศจิกายน 2569 (ไอคอนชุดใหม่) / 1 November 2026 (new icons)**
 
@@ -137,8 +143,8 @@
 <table>
 <tr>
 <td width="33%" valign="top"><img src="images/khiankrub-loading.png" alt="The KhianKrub loading screen: a glass gold ข on navy" width="100%"><p align="center"><sub><b>เขียนครับ</b></sub></p></td>
-<td width="33%" valign="top"><img src="images/phutkrub-loading.png" alt="The PhutKrub loading screen: a glass gold พ on coral" width="100%"><p align="center"><sub><b>พูดครับ</b></sub></p></td>
-<td width="33%" valign="top"><img src="images/khitkrub-loading.png" alt="The KhitKrub loading screen: a glass gold ค on teal" width="100%"><p align="center"><sub><b>คิดครับ</b></sub></p></td>
+<td width="33%" valign="top"><img src="images/phutkrub-loading.png" alt="The PhutKrub loading screen: a glass gold พ on coral, with a gold sheet and a coral sheet flying in behind it" width="100%"><p align="center"><sub><b>พูดครับ</b></sub></p></td>
+<td width="33%" valign="top"><img src="images/khitkrub-loading.png" alt="The KhitKrub loading screen: a glass gold ค on teal, with a gold sheet and a teal sheet flying in behind it" width="100%"><p align="center"><sub><b>คิดครับ</b></sub></p></td>
 </tr>
 </table>
 
