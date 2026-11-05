@@ -54,6 +54,7 @@
 | ฉบับร่างเก็บในเบราว์เซอร์ของคุณเท่านั้น ไฟล์ไม่ถูกส่งไปที่ใด | Drafts are kept in your own browser only; your files are not uploaded anywhere |
 | ไอคอนชุดเดียวกันและริบบิ้นขนาดเดียวกันทุกโปรแกรม | One icon set and one ribbon layout in every app |
 | ธีมสว่างและธีมมืด | Light and dark themes |
+| Google Drive: เชื่อมต่อในคลิกเดียว เปิดไฟล์จาก Drive แล้วกดบันทึกกลับไปที่ไฟล์เดิม หรือบันทึกเป็นสำเนาใหม่ | Google Drive: connect in one click, open a file from Drive and Save puts it back, or save a new copy |
 | ตั้งค่าภาษาครั้งเดียว โปรแกรมจำไว้ให้ | Choose the language once; the app remembers it |
 
 ## หน้าตาและความสามารถ / A look and the key features
@@ -90,6 +91,9 @@
 - เปิดและบันทึกไฟล์ PowerPoint (`.pptx`) / Open and save `.pptx`
 - จัดข้อความแบบกระจายไทย (ปุ่มตัว ท) / Thai Distribution (the ท button)
 - สไลด์ใหม่ใช้ TH Sarabun New / New slides use TH Sarabun New
+- เปิดและบันทึกไฟล์ `.pptx` ใน Google Drive / Open and save `.pptx` files in Google Drive
+
+<p align="center"><img src="images/phutkrub-drive.png" alt="PhutKrub's File › Open page in Thai with two place cards: เครื่องนี้ (this device) and Google Drive, connected, with a PowerPoint file to open" width="80%"><br><sub><b>เปิดจากเครื่องนี้หรือ Google Drive / Open from this device or Google Drive</b></sub></p>
 
 <table>
 <tr>
@@ -109,6 +113,9 @@
 
 - สูตรและฟังก์ชันกว่า 500 ตัว แผนภูมิ ตารางสรุปข้อมูล การจัดรูปแบบตามเงื่อนไข / 500+ functions, charts, pivot tables and conditional formatting
 - เปิดและบันทึกไฟล์ Excel (`.xlsx`) และ CSV / Open and save `.xlsx` and CSV
+- เปิดและบันทึกไฟล์ `.xlsx` ใน Google Drive / Open and save `.xlsx` files in Google Drive
+
+<p align="center"><img src="images/khitkrub-drive.png" alt="KhitKrub's Save As page in Thai for a workbook opened from Google Drive: the Google Drive card first, with บันทึกทับไฟล์นี้ใน Google Drive, beside the เครื่องนี้ card" width="80%"><br><sub><b>บันทึกกลับไปที่ไฟล์เดิมใน Google Drive / Save back to the same file in Google Drive</b></sub></p>
 - ตัวอักษรไทยในเซลล์ใช้ TH Sarabun New ตัวเลขและอังกฤษใช้ฟอนต์เริ่มต้น / Thai letters in cells use TH Sarabun New; Latin text and numbers keep the default font
 - รุ่นแรก: ชื่อฟังก์ชันในสูตรยังเป็นภาษาอังกฤษ ยังไม่มีเลขไทย วันที่ พ.ศ. หรือการอ่านจำนวนเงินเป็นตัวอักษร / First release: function names stay English; no Thai digits, Buddhist-era dates or baht-in-words yet
 
@@ -120,6 +127,36 @@
 </table>
 
 ## มีอะไรใหม่ / What's new
+
+**5 พฤศจิกายน 2569 / 5 November 2026**
+
+- **ฉบับร่างในอุปกรณ์นี้ ทั้งสามโปรแกรม** เอกสาร งานนำเสนอ หรือเวิร์กบุ๊กใหม่ที่ยังไม่ได้บันทึกเป็นไฟล์หรือลง Google Drive เรียกว่าฉบับร่างอย่างชัดเจน หน้าเริ่มต้นแสดง **ชื่อ (ฉบับร่าง)** แถบชื่อด้านบนแสดง **(ฉบับร่าง) — บันทึกในอุปกรณ์นี้แล้ว** และเมื่อทุกอย่างถูกเก็บแล้ว ปิดแท็บได้โดยเบราว์เซอร์ไม่ถาม ส่วนไฟล์ที่เปิดจากเครื่องหรือ Google Drive พูดครับและคิดครับจะถามก่อนปิดแท็บหากยังมีการแก้ไขที่ยังไม่ได้บันทึก แบบเดียวกับเขียนครับ / **Drafts on this device, in all three apps.** A new document, presentation or workbook not yet saved as a file or to Google Drive is plainly called a draft: the start screen lists **Name (draft)**, the title bar reads **(draft) — Saved on this device**, and once everything is kept the tab closes without the browser's "Leave site?" question. For a file opened from this device or Google Drive, PhutKrub and KhitKrub now ask before the tab closes with unsaved edits, as KhianKrub does.
+
+<p align="center">
+  <img src="images/khiankrub-drafts.png" alt="The KhianKrub start screen in Thai with drafts listed as ชื่อเอกสาร (ฉบับร่าง) under ฉบับร่างในอุปกรณ์นี้" width="70%">
+</p>
+
+- **พูดครับ: มุมมองผู้บรรยายในหน้าต่างแยก** เมื่อเริ่มนำเสนอ สไลด์จะแสดงในแท็บเดิม และมุมมองผู้บรรยายเปิดในหน้าต่างใหม่ พร้อมสไลด์ปัจจุบัน สไลด์ถัดไป บันทึกย่อ และตัวจับเวลา ควบคุมการนำเสนอได้จากหน้าต่างใดก็ได้ / **PhutKrub: Presenter View in its own window.** When a show starts the slides stay in the tab and Presenter View opens in a new window with the current and next slide, notes and a timer; either window controls the show.
+
+<p align="center">
+  <img src="images/phutkrub-presenter.png" alt="PhutKrub Presenter View in Thai in its own browser window: timer, buttons, current slide, next slide and notes" width="70%">
+</p>
+
+- **คิดครับ: อัปเดตจาก GridCraft** คลังฟังก์ชันในแท็บสูตรพร้อมไอคอนสมุดสีต่าง ๆ เปิดไฟล์ CSV ที่วันที่ขึ้นต้นด้วยวันได้ถูกต้อง ตรึงช่องแล้วเลื่อนดูได้ไม่หาย ค้นหาและแทนที่เฉพาะช่วงที่เลือก และสูตรจาก Google Sheets เปิดได้ตามเดิม / **KhitKrub: GridCraft update.** The Formulas tab's Function Library with coloured book icons, day-first dates in CSV files read correctly, frozen panes that keep their text while scrolling, Find and Replace within a selection, and formulas from Google Sheets kept.
+
+<p align="center">
+  <img src="images/khitkrub-formulas.png" alt="KhitKrub's Formulas tab in Thai with the Function Library's coloured category books" width="100%">
+</p>
+
+- **กล่องโต้ตอบเป็นภาษาไทย** หน้าต่างถามบันทึกการเปลี่ยนแปลงเป็นภาษาไทยทั้งหมดในทั้งสามโปรแกรม และกล่องโต้ตอบที่ใช้บ่อยของเขียนครับ เช่น ฟอนต์ ย่อหน้า ตั้งค่าหน้ากระดาษ ค้นหาและแทนที่ สัญลักษณ์ และ ไฟล์ › ตัวเลือก เป็นภาษาไทยแล้ว / **Dialogs in Thai.** The Save Changes prompt is all Thai in all three apps, and KhianKrub's most-used dialogs, such as Font, Paragraph, Page Setup, Find and Replace, Symbol and File › Options, are now in Thai.
+
+- **เขียนครับ: อัปเดตจาก WordCraft** คัดลอกและตัดทั้งตาราง แถว หรือเซลล์ได้ (คัดลอกสองแถวไปวางก็ได้ตารางสองแถว) ข้อความในรูปร่างหมุนตามรูปร่าง บันทึกเป็นแม่แบบ `.dotx` เลขลำดับ a. b. c. เลขหัวข้อ จุดนำแท็บ และเส้นขอบย่อหน้าเหมือน Word มากขึ้น และเปิดไฟล์ `.doc` `.docx` `.rtf` ได้ถูกต้องขึ้น / **KhianKrub: WordCraft update.** Copy and cut whole tables, rows or cells (two copied rows paste as a two-row table), text that turns with its shape, `.dotx` templates, a. b. c. numbering, list numbers, tab leaders and paragraph borders closer to Word, and better `.doc`, `.docx` and `.rtf` files.
+
+<p align="center">
+  <img src="images/khiankrub-table-copy.png" alt="KhianKrub with a Thai order table and, below it, a two-row table pasted after copying just the rows ปากกา and สมุด" width="70%">
+</p>
+
+- **Google Drive ในพูดครับและคิดครับ** เชื่อมต่อ Google Drive ในคลิกเดียวแบบเดียวกับเขียนครับ เปิดงานนำเสนอ `.pptx` หรือตารางคำนวณ `.xlsx` จาก Drive แก้ไขแล้วกดบันทึก (Ctrl+S) ไฟล์เดิมใน Drive จะถูกบันทึกทับ หรือบันทึกเป็นสำเนาใหม่ก็ได้ หน้าเปิดและหน้าบันทึกมีสองที่ให้เลือก คือเครื่องนี้และ Google Drive โปรแกรมเข้าถึงเฉพาะไฟล์ที่คุณเลือกหรือที่โปรแกรมสร้างเท่านั้น / **Google Drive in PhutKrub and KhitKrub.** Connect Google Drive in one click, as in KhianKrub; open a `.pptx` presentation or an `.xlsx` workbook from Drive, edit it, and Save (Ctrl+S) puts it back over the same file, or save a new copy. The Open and Save pages offer two places, this device and Google Drive. The apps see only the files you pick or they create.
 
 **2 พฤศจิกายน 2569 / 2 November 2026**
 
@@ -168,7 +205,7 @@
 
 ## ความเป็นส่วนตัว / Privacy
 
-งานของคุณถูกประมวลผลในเบราว์เซอร์ ไม่ถูกส่งขึ้นเซิร์ฟเวอร์ ฉบับร่างเก็บไว้ในเบราว์เซอร์ของอุปกรณ์เครื่องนั้นเท่านั้น หากใช้เครื่องร่วมกับผู้อื่น ควรทิ้งฉบับร่างเมื่อเสร็จงาน การเชื่อมต่อ Google Drive ของเขียนครับเป็นทางเลือกและทำเมื่อคุณสั่งเท่านั้น รายละเอียดอยู่ที่ [นโยบายความเป็นส่วนตัว](https://khiankrub.app/privacy.html) / Your work is processed in the browser and not sent to a server. Drafts stay in that device's browser; on a shared device, discard them when you finish. KhianKrub's Google Drive connection is optional and only used when you ask for it. See the [privacy policy](https://khiankrub.app/privacy.html).
+งานของคุณถูกประมวลผลในเบราว์เซอร์ ไม่ถูกส่งขึ้นเซิร์ฟเวอร์ ฉบับร่างเก็บไว้ในเบราว์เซอร์ของอุปกรณ์เครื่องนั้นเท่านั้น หากใช้เครื่องร่วมกับผู้อื่น ควรทิ้งฉบับร่างเมื่อเสร็จงาน การเชื่อมต่อ Google Drive ของทั้งสามโปรแกรมเป็นทางเลือกและทำเมื่อคุณสั่งเท่านั้น โปรแกรมเข้าถึงเฉพาะไฟล์ที่คุณเลือกหรือที่โปรแกรมสร้าง เพื่อให้เชื่อมต่อค้างไว้ บริการที่ drive.khiankrub.app, drive.phutkrub.app และ drive.khitkrub.app (บริการเดียวกัน) เก็บโทเค็นของ Google แบบเข้ารหัส และยกเลิกการเชื่อมต่อได้ทุกเมื่อ รายละเอียดอยู่ที่ [นโยบายความเป็นส่วนตัว](https://khiankrub.app/privacy.html) / Your work is processed in the browser and not sent to a server. Drafts stay in that device's browser; on a shared device, discard them when you finish. Google Drive is optional in all three apps and only used when you ask for it; the apps see only the files you pick or they create. To keep you connected, the service at drive.khiankrub.app, drive.phutkrub.app and drive.khitkrub.app (one service) stores Google tokens encrypted, and you can disconnect at any time. See the [privacy policy](https://khiankrub.app/privacy.html).
 
 พบปัญหาหรือมีข้อเสนอแนะ กดปุ่ม **แจ้งปัญหา** ในเขียนครับ / Found a problem or have a suggestion? Press **Report a problem** (แจ้งปัญหา) in KhianKrub.
 
