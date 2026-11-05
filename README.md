@@ -130,6 +130,12 @@
 
 **5 พฤศจิกายน 2569 / 5 November 2026**
 
+- **KrubOffice สำหรับ Windows (รุ่นทดลอง)** ติดตั้งครั้งเดียว ได้เขียนครับ คิดครับ และพูดครับในแอปเดียว ใช้ได้โดยไม่ต้องเปิดเบราว์เซอร์ ดับเบิลคลิกไฟล์ .docx .xlsx หรือ .pptx แล้ว KrubOffice เลือกโปรแกรมให้เอง เปิดโดยไม่เลือกไฟล์จะเห็นหน้าเริ่มต้นพร้อมไฟล์ล่าสุดของทั้งสามโปรแกรม ดาวน์โหลดและดูวิธีติดตั้งได้ที่ [kruboffice.app/desktop.html](https://kruboffice.app/desktop.html) รุ่นสำหรับ macOS จะตามมา / **KrubOffice for Windows (beta).** One install gives you KhianKrub, KhitKrub and PhutKrub in one app, no browser needed. Double-click a .docx, .xlsx or .pptx file and KrubOffice opens the right program; opened on its own, it shows a start page with the recent files of all three. Download and install steps: [kruboffice.app/desktop.html](https://kruboffice.app/desktop.html). macOS comes later.
+
+<p align="center">
+  <img src="images/kruboffice-desktop-start.png" alt="The KrubOffice desktop start page in Thai: the KrubOffice logo, the welcome วันนี้ ...อยากทำอะไรดีครับ?, the three app icons, the เปิดไฟล์… button and recent files" width="70%">
+</p>
+
 - **ฉบับร่างในอุปกรณ์นี้ ทั้งสามโปรแกรม** เอกสาร งานนำเสนอ หรือเวิร์กบุ๊กใหม่ที่ยังไม่ได้บันทึกเป็นไฟล์หรือลง Google Drive เรียกว่าฉบับร่างอย่างชัดเจน หน้าเริ่มต้นแสดง **ชื่อ (ฉบับร่าง)** แถบชื่อด้านบนแสดง **(ฉบับร่าง) — บันทึกในอุปกรณ์นี้แล้ว** และเมื่อทุกอย่างถูกเก็บแล้ว ปิดแท็บได้โดยเบราว์เซอร์ไม่ถาม ส่วนไฟล์ที่เปิดจากเครื่องหรือ Google Drive พูดครับและคิดครับจะถามก่อนปิดแท็บหากยังมีการแก้ไขที่ยังไม่ได้บันทึก แบบเดียวกับเขียนครับ / **Drafts on this device, in all three apps.** A new document, presentation or workbook not yet saved as a file or to Google Drive is plainly called a draft: the start screen lists **Name (draft)**, the title bar reads **(draft) — Saved on this device**, and once everything is kept the tab closes without the browser's "Leave site?" question. For a file opened from this device or Google Drive, PhutKrub and KhitKrub now ask before the tab closes with unsaved edits, as KhianKrub does.
 
 <p align="center">
