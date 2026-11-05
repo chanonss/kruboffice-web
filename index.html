@@ -49,6 +49,23 @@
     footer { padding: 16px; text-align: center; font-size: 12px; color: var(--sub); }
     footer a { color: var(--text); }
     @media (max-width: 420px) { .backing { border-radius: 17px; } .brand { font-size: 22px; } .brand svg { width: 40px; height: 40px; } h1 { font-size: 20px; margin-bottom: 28px; } .apps { gap: 20px 10px; } .app { width: 104px; } .app svg { width: 72px; height: 72px; border-radius: 17px; } .name { font-size: 15px; } .kind { font-size: 11px; } }
+    /* Version line under each tile: small, quiet, a link to that app's Thai release notes. It is filled from each
+       app's version.json, at publish time by publish-kruboffice.sh and again by the script below when the page opens;
+       without either it stays hidden. */
+    .apps li { display: flex; flex-direction: column; align-items: center; }
+    .app { position: relative; }
+    .ver { margin-top: -10px; font-size: 11.5px; line-height: 1.5; color: var(--sub); text-decoration: none; border-radius: 6px; padding: 1px 6px; }
+    .ver:hover, .ver:focus-visible { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+    .ver .v { font-variant-numeric: tabular-nums; }
+    .ver time { display: block; }
+    [hidden] { display: none !important; }
+    /* "ใหม่" on the icon for 14 days after an app is updated. */
+    .new { position: absolute; top: 2px; right: 8px; padding: 0 7px; border-radius: 999px; font-size: 11px; font-weight: 700; line-height: 18px;
+      color: #3d2a00; background: #f2b705; box-shadow: 0 0 0 2px var(--bg); }
+    footer .updated { display: block; margin-bottom: 4px; }
+    /* On a phone the app's kind goes on its own line, so all three tiles keep the same height. */
+    @media (max-width: 420px) { .new { right: 4px; font-size: 10px; line-height: 16px; padding: 0 6px; } .ver { font-size: 10.5px; }
+      .kind .sep { display: none; } .kind .k { display: block; } }
   </style>
   <!-- Cloudflare Web Analytics: counts page views and visits without cookies or a visitor id. KrubOffice uses its own analytics site. -->
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6995071820de45148e5f4e8304902051"}'></script>
@@ -60,6 +77,7 @@
   <ul class="apps">
     <li>
       <a class="app khian" href="https://khiankrub.app/" target="_blank" rel="noopener">
+        <span class="new" hidden>ใหม่</span>
         <!-- KhianKrub: glass ข, the same drawing as the app icon (assets/app-icon/khiankrub.svg in its repo). -->
         <svg viewBox="0 0 512 512" aria-hidden="true"><!-- Quiet Glass artwork: KrubOffice contributors, MIT OR Apache-2.0. Thai outline: Sarabun Bold, SIL OFL 1.1; see OFL-Sarabun.txt. -->
 <defs>
@@ -73,11 +91,13 @@
  <g transform="translate(-11 -7)" filter="url(#shadow0)"><path fill-rule="evenodd" d="M395.93 111.03 L395.93 329.49 Q395.93 366.23 371.52 386.12 Q347.11 406.00 301.81 406.00 Q256.00 406.00 232.09 386.12 Q208.18 366.23 208.18 329.49 L208.18 295.26 Q208.18 280.16 213.21 269.09 Q218.25 258.01 228.82 242.41 Q239.89 225.80 245.18 213.72 Q250.46 201.64 250.46 184.52 Q250.46 166.40 239.89 157.09 Q229.32 147.78 210.70 147.78 Q194.09 147.78 184.02 152.31 Q203.15 153.32 216.49 166.15 Q229.83 178.99 229.83 202.14 Q229.83 224.29 215.23 239.89 Q200.63 255.50 174.46 255.50 Q147.28 255.50 131.67 238.38 Q116.07 221.27 116.07 190.06 Q116.07 152.31 142.24 129.15 Q168.42 106.00 213.72 106.00 Q258.01 106.00 283.43 125.13 Q308.85 144.26 308.85 178.48 Q308.85 199.12 303.57 212.96 Q298.28 226.81 288.21 245.43 Q280.16 259.02 276.13 268.84 Q272.11 278.65 272.11 290.73 L272.11 329.99 Q272.11 342.58 279.91 349.12 Q287.71 355.66 302.31 355.66 Q316.40 355.66 323.95 349.12 Q331.50 342.58 331.50 329.99 L331.50 111.03 Z M196.60 203.15 Q196.60 193.08 190.56 187.04 Q184.52 181.00 174.46 181.00 Q164.39 181.00 158.10 187.04 Q151.81 193.08 151.81 203.15 Q151.81 213.21 158.10 219.26 Q164.39 225.30 174.46 225.30 Q184.52 225.30 190.56 219.00 Q196.60 212.71 196.60 203.15 Z" fill="url(#glass0)" stroke="url(#edge0)" stroke-width="3"/>
  <path fill-rule="evenodd" d="M395.93 111.03 L395.93 329.49 Q395.93 366.23 371.52 386.12 Q347.11 406.00 301.81 406.00 Q256.00 406.00 232.09 386.12 Q208.18 366.23 208.18 329.49 L208.18 295.26 Q208.18 280.16 213.21 269.09 Q218.25 258.01 228.82 242.41 Q239.89 225.80 245.18 213.72 Q250.46 201.64 250.46 184.52 Q250.46 166.40 239.89 157.09 Q229.32 147.78 210.70 147.78 Q194.09 147.78 184.02 152.31 Q203.15 153.32 216.49 166.15 Q229.83 178.99 229.83 202.14 Q229.83 224.29 215.23 239.89 Q200.63 255.50 174.46 255.50 Q147.28 255.50 131.67 238.38 Q116.07 221.27 116.07 190.06 Q116.07 152.31 142.24 129.15 Q168.42 106.00 213.72 106.00 Q258.01 106.00 283.43 125.13 Q308.85 144.26 308.85 178.48 Q308.85 199.12 303.57 212.96 Q298.28 226.81 288.21 245.43 Q280.16 259.02 276.13 268.84 Q272.11 278.65 272.11 290.73 L272.11 329.99 Q272.11 342.58 279.91 349.12 Q287.71 355.66 302.31 355.66 Q316.40 355.66 323.95 349.12 Q331.50 342.58 331.50 329.99 L331.50 111.03 Z M196.60 203.15 Q196.60 193.08 190.56 187.04 Q184.52 181.00 174.46 181.00 Q164.39 181.00 158.10 187.04 Q151.81 193.08 151.81 203.15 Q151.81 213.21 158.10 219.26 Q164.39 225.30 174.46 225.30 Q184.52 225.30 190.56 219.00 Q196.60 212.71 196.60 203.15 Z" fill="none" stroke="#fffbe6" stroke-opacity=".22" stroke-width="1" transform="translate(0 -3)"/></g></svg>
         <span class="name">เขียนครับ</span>
-        <span class="kind">KhianKrub · เอกสาร</span>
+        <span class="kind">KhianKrub<span class="sep"> · </span><span class="k">เอกสาร</span></span>
       </a>
+      <a class="ver" data-app="khiankrub" data-name="KhianKrub" href="https://github.com/chanonss/khiankrub-web/releases/tag/v0.12.0" target="_blank" rel="noopener" aria-label="KhianKrub รุ่น 0.12.0 อัปเดต 5 พ.ย. 2569: ดูว่ามีอะไรใหม่"><span class="v">รุ่น 0.12.0</span><time datetime="2026-11-05">อัปเดต 5 พ.ย. 2569</time></a>
     </li>
     <li>
       <a class="app khit" href="https://khitkrub.app/" target="_blank" rel="noopener">
+        <span class="new" hidden>ใหม่</span>
         <!-- KhitKrub: glass ค, the same drawing as the app icon (assets/app-icon/khitkrub.svg in its repo). -->
         <svg viewBox="0 0 512 512" aria-hidden="true"><!-- Quiet Glass artwork: KrubOffice contributors, MIT OR Apache-2.0. Thai outline: Sarabun Bold, SIL OFL 1.1; see OFL-Sarabun.txt. -->
 <defs>
@@ -91,11 +111,13 @@
  <g transform="" filter="url(#shadow1)"><path d="M 354.41 125.43 Q 389.64 151.86 389.64 197.66 L 389.64 393.97 L 325.21 393.97 L 325.21 204.20 Q 325.21 178.53 307.34 163.94 Q 289.47 149.34 258.27 149.34 Q 224.04 149.34 204.15 164.94 Q 184.27 180.55 184.27 208.23 Q 184.27 224.34 189.81 257.56 Q 198.37 227.86 215.73 211.50 Q 233.10 195.14 257.76 195.14 Q 282.43 195.14 296.27 207.73 Q 310.11 220.31 310.11 242.96 Q 310.11 265.11 297.02 277.69 Q 283.94 290.28 261.29 290.28 Q 249.71 290.28 239.89 286.25 Q 230.08 282.23 224.54 274.67 Q 216.49 286.25 211.45 303.11 Q 206.42 319.98 206.42 336.59 L 206.42 393.97 L 144.00 393.97 L 144.00 318.47 Q 144.00 307.39 134.44 273.16 Q 128.40 249.00 125.38 234.91 Q 122.36 220.82 122.36 208.74 Q 122.36 158.40 158.35 128.70 Q 194.34 99.00 258.27 99.00 Q 319.17 99.00 354.41 125.43ZM 245.43 227.86 Q 239.64 233.40 239.64 242.46 Q 239.64 252.02 245.43 257.56 Q 251.22 263.10 260.28 263.10 Q 269.34 263.10 274.88 257.56 Q 280.41 252.02 280.41 242.46 Q 280.41 233.40 274.88 227.86 Q 269.34 222.33 260.28 222.33 Q 251.22 222.33 245.43 227.86Z" fill="url(#glass1)" stroke="url(#edge1)" stroke-width="3"/>
  <path d="M 354.41 125.43 Q 389.64 151.86 389.64 197.66 L 389.64 393.97 L 325.21 393.97 L 325.21 204.20 Q 325.21 178.53 307.34 163.94 Q 289.47 149.34 258.27 149.34 Q 224.04 149.34 204.15 164.94 Q 184.27 180.55 184.27 208.23 Q 184.27 224.34 189.81 257.56 Q 198.37 227.86 215.73 211.50 Q 233.10 195.14 257.76 195.14 Q 282.43 195.14 296.27 207.73 Q 310.11 220.31 310.11 242.96 Q 310.11 265.11 297.02 277.69 Q 283.94 290.28 261.29 290.28 Q 249.71 290.28 239.89 286.25 Q 230.08 282.23 224.54 274.67 Q 216.49 286.25 211.45 303.11 Q 206.42 319.98 206.42 336.59 L 206.42 393.97 L 144.00 393.97 L 144.00 318.47 Q 144.00 307.39 134.44 273.16 Q 128.40 249.00 125.38 234.91 Q 122.36 220.82 122.36 208.74 Q 122.36 158.40 158.35 128.70 Q 194.34 99.00 258.27 99.00 Q 319.17 99.00 354.41 125.43ZM 245.43 227.86 Q 239.64 233.40 239.64 242.46 Q 239.64 252.02 245.43 257.56 Q 251.22 263.10 260.28 263.10 Q 269.34 263.10 274.88 257.56 Q 280.41 252.02 280.41 242.46 Q 280.41 233.40 274.88 227.86 Q 269.34 222.33 260.28 222.33 Q 251.22 222.33 245.43 227.86Z" fill="none" stroke="#fffbe6" stroke-opacity=".22" stroke-width="1" transform="translate(0 -3)"/></g></svg>
         <span class="name">คิดครับ</span>
-        <span class="kind">KhitKrub · ตารางคำนวณ</span>
+        <span class="kind">KhitKrub<span class="sep"> · </span><span class="k">ตารางคำนวณ</span></span>
       </a>
+      <a class="ver" data-app="khitkrub" data-name="KhitKrub" href="https://github.com/chanonss/khitkrub-web/releases/tag/v0.3.0" target="_blank" rel="noopener" aria-label="KhitKrub รุ่น 0.3.0 อัปเดต 5 พ.ย. 2569: ดูว่ามีอะไรใหม่"><span class="v">รุ่น 0.3.0</span><time datetime="2026-11-05">อัปเดต 5 พ.ย. 2569</time></a>
     </li>
     <li>
       <a class="app phut" href="https://phutkrub.app/" target="_blank" rel="noopener">
+        <span class="new" hidden>ใหม่</span>
         <!-- PhutKrub: glass พ, the same drawing as the app icon (assets/app-icon/phutkrub.svg in its repo). -->
         <svg viewBox="0 0 512 512" aria-hidden="true"><!-- Quiet Glass artwork: KrubOffice contributors, MIT OR Apache-2.0. Thai outline: Sarabun Bold, SIL OFL 1.1; see OFL-Sarabun.txt. -->
 <defs>
@@ -109,14 +131,71 @@
  <g transform="" filter="url(#shadow2)"><path d="M 422.61 104.04 L 422.61 393.97 L 352.14 393.97 L 285.19 179.04 L 218.75 393.97 L 147.78 393.97 L 147.78 207.23 L 144.76 207.23 Q 120.09 207.23 104.74 192.38 Q 89.39 177.53 89.39 153.37 Q 89.39 129.71 106.00 114.36 Q 122.61 99.00 148.79 99.00 Q 176.47 99.00 193.84 115.36 Q 211.20 131.72 211.20 157.39 L 211.20 263.60 Q 211.20 276.18 208.68 304.88 L 219.26 261.59 L 262.04 106.05 L 308.85 106.05 L 351.13 261.59 L 361.70 304.88 Q 359.19 276.18 359.19 263.60 L 359.19 104.04 L 422.61 104.04ZM 160.61 169.73 Q 166.91 163.43 166.91 153.37 Q 166.91 143.30 160.61 137.01 Q 154.32 130.71 144.26 130.71 Q 134.69 130.71 128.15 137.01 Q 121.60 143.30 121.60 153.37 Q 121.60 162.93 128.15 169.47 Q 134.69 176.02 144.26 176.02 Q 154.32 176.02 160.61 169.73Z" fill="url(#glass2)" stroke="url(#edge2)" stroke-width="3"/>
  <path d="M 422.61 104.04 L 422.61 393.97 L 352.14 393.97 L 285.19 179.04 L 218.75 393.97 L 147.78 393.97 L 147.78 207.23 L 144.76 207.23 Q 120.09 207.23 104.74 192.38 Q 89.39 177.53 89.39 153.37 Q 89.39 129.71 106.00 114.36 Q 122.61 99.00 148.79 99.00 Q 176.47 99.00 193.84 115.36 Q 211.20 131.72 211.20 157.39 L 211.20 263.60 Q 211.20 276.18 208.68 304.88 L 219.26 261.59 L 262.04 106.05 L 308.85 106.05 L 351.13 261.59 L 361.70 304.88 Q 359.19 276.18 359.19 263.60 L 359.19 104.04 L 422.61 104.04ZM 160.61 169.73 Q 166.91 163.43 166.91 153.37 Q 166.91 143.30 160.61 137.01 Q 154.32 130.71 144.26 130.71 Q 134.69 130.71 128.15 137.01 Q 121.60 143.30 121.60 153.37 Q 121.60 162.93 128.15 169.47 Q 134.69 176.02 144.26 176.02 Q 154.32 176.02 160.61 169.73Z" fill="none" stroke="#fffbe6" stroke-opacity=".22" stroke-width="1" transform="translate(0 -3)"/></g></svg>
         <span class="name">พูดครับ</span>
-        <span class="kind">PhutKrub · งานนำเสนอ</span>
+        <span class="kind">PhutKrub<span class="sep"> · </span><span class="k">งานนำเสนอ</span></span>
       </a>
+      <a class="ver" data-app="phutkrub" data-name="PhutKrub" href="https://github.com/chanonss/phutkrub-web/releases/tag/v0.5.0" target="_blank" rel="noopener" aria-label="PhutKrub รุ่น 0.5.0 อัปเดต 5 พ.ย. 2569: ดูว่ามีอะไรใหม่"><span class="v">รุ่น 0.5.0</span><time datetime="2026-11-05">อัปเดต 5 พ.ย. 2569</time></a>
     </li>
   </ul>
 </main>
 <footer>
+  <span class="updated">อัปเดตล่าสุด <time datetime="2026-11-05">5 พ.ย. 2569</time> · <a href="https://github.com/chanonss/kruboffice-web#มีอะไรใหม่--whats-new">มีอะไรใหม่</a></span>
   ใช้ฟรีครับ · เอกสารประมวลผลในเบราว์เซอร์ของคุณ ·
   <a href="https://khiankrub.app/about.html">เกี่ยวกับ / About</a> · <a href="https://khiankrub.app/privacy.html">ความเป็นส่วนตัว / Privacy</a>
 </footer>
+<script>
+// Fills the version line under each tile from that app's version.json, so a new app release shows here without
+// republishing this page, and hides "ใหม่" 14 days after an update. If a file can't be read, the line keeps what
+// was written at publish time (or stays hidden). Kept in step with fill() in publish-kruboffice.sh.
+(function () {
+  var MONTHS = ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."];
+  var NEW_DAYS = 14;
+  function parse(iso) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || "");
+    return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null;
+  }
+  function thai(d) { return d.getDate() + " " + MONTHS[d.getMonth()] + " " + (d.getFullYear() + 543); }
+  function isNew(d) { return (Date.now() - d.getTime()) / 86400000 < NEW_DAYS; }
+  var latest = null;
+  function footer() {
+    var f = document.querySelector("footer .updated");
+    if (!f || !latest) return;
+    var t = f.querySelector("time");
+    t.dateTime = latest.iso;
+    t.textContent = thai(latest.date);
+    f.hidden = false;
+  }
+  function show(link, info) {
+    var d = parse(info.date);
+    if (!d || typeof info.version !== "string" || !/^[0-9][0-9A-Za-z.\-]*$/.test(info.version)) return;
+    if (typeof info.notes === "string" && info.notes.indexOf("https://github.com/") === 0) link.href = info.notes;
+    link.querySelector(".v").textContent = "รุ่น " + info.version;
+    var t = link.querySelector("time");
+    t.dateTime = info.date;
+    t.textContent = "อัปเดต " + thai(d);
+    link.setAttribute("aria-label", link.dataset.name + " รุ่น " + info.version + " อัปเดต " + thai(d) + ": ดูว่ามีอะไรใหม่");
+    link.hidden = false;
+    var badge = link.parentNode.querySelector(".new");
+    if (badge) badge.hidden = !isNew(d);
+    if (!latest || d > latest.date) latest = { date: d, iso: info.date };
+  }
+  var links = document.querySelectorAll(".ver[data-app]");
+  Array.prototype.forEach.call(links, function (link) {
+    // Whatever was written at publish time counts until the live file answers.
+    var t = link.querySelector("time");
+    if (!link.hidden && t.dateTime) {
+      var d = parse(t.dateTime);
+      var badge = link.parentNode.querySelector(".new");
+      if (d && badge) badge.hidden = !isNew(d);
+      if (d && (!latest || d > latest.date)) latest = { date: d, iso: t.dateTime };
+    }
+    if (!window.fetch) return;
+    fetch("https://" + link.dataset.app + ".app/version.json", { cache: "no-cache" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (info) { if (info) { show(link, info); footer(); } })
+      .catch(function () {});
+  });
+  footer();
+})();
+</script>
 </body>
 </html>

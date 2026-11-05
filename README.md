@@ -158,6 +158,12 @@
 
 - **Google Drive ในพูดครับและคิดครับ** เชื่อมต่อ Google Drive ในคลิกเดียวแบบเดียวกับเขียนครับ เปิดงานนำเสนอ `.pptx` หรือตารางคำนวณ `.xlsx` จาก Drive แก้ไขแล้วกดบันทึก (Ctrl+S) ไฟล์เดิมใน Drive จะถูกบันทึกทับ หรือบันทึกเป็นสำเนาใหม่ก็ได้ หน้าเปิดและหน้าบันทึกมีสองที่ให้เลือก คือเครื่องนี้และ Google Drive โปรแกรมเข้าถึงเฉพาะไฟล์ที่คุณเลือกหรือที่โปรแกรมสร้างเท่านั้น / **Google Drive in PhutKrub and KhitKrub.** Connect Google Drive in one click, as in KhianKrub; open a `.pptx` presentation or an `.xlsx` workbook from Drive, edit it, and Save (Ctrl+S) puts it back over the same file, or save a new copy. The Open and Save pages offer two places, this device and Google Drive. The apps see only the files you pick or they create.
 
+- **หน้า KrubOffice บอกรุ่นและวันที่อัปเดต** ใต้ไอคอนของแต่ละโปรแกรมแสดงรุ่นและวันที่อัปเดตล่าสุด กดแล้วไปดูว่ามีอะไรใหม่ในรุ่นนั้น ป้าย **ใหม่** สีทองขึ้นบนไอคอน 14 วันหลังโปรแกรมอัปเดต และท้ายหน้าบอกวันที่อัปเดตล่าสุดของทั้งชุด / **The KrubOffice page shows versions and update dates.** Under each app's icon: its version and the date it was last updated, linking to what's new in that release. A gold **ใหม่** (new) badge sits on the icon for 14 days after an update, and the footer gives the suite's latest update date.
+
+<p align="center">
+  <img src="images/kruboffice-versions.png" alt="The KrubOffice page: the three app icons with a gold ใหม่ badge, and under each the version and update date, such as รุ่น 0.12.0, อัปเดต 5 พ.ย. 2569" width="70%">
+</p>
+
 **2 พฤศจิกายน 2569 / 2 November 2026**
 
 - **หน้า KrubOffice ใช้ไอคอนแบบกระจกชุดใหม่** ตัว ข ค พ สีทองแบบเดียวกับโลโก้ของแต่ละโปรแกรม / **The KrubOffice page has the new glass icons**: the same gold ข, ค and พ as each app's logo.
