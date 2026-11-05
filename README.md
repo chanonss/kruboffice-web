@@ -203,6 +203,12 @@
 
 ประวัติรุ่นของแต่ละโปรแกรมอยู่ที่หน้า Releases ของ [khiankrub-web](https://github.com/chanonss/khiankrub-web/releases), [phutkrub-web](https://github.com/chanonss/phutkrub-web/releases) และ [khitkrub-web](https://github.com/chanonss/khitkrub-web/releases) / Each app's release history is on its Releases page.
 
+## ติดตามข่าว / Follow us
+
+ข่าว รุ่นใหม่ และเคล็ดลับการใช้งานของเขียนครับ คิดครับ และพูดครับ ติดตามได้ที่ **[เพจ Facebook ของ KrubOffice](https://www.facebook.com/kruboffice/)**
+
+News, new versions and tips for KhianKrub, KhitKrub and PhutKrub: follow **[KrubOffice on Facebook](https://www.facebook.com/kruboffice/)**.
+
 ## เริ่มใช้งาน / Getting started
 
 1. เปิด / Visit **[kruboffice.app](https://kruboffice.app/)** บนคอมพิวเตอร์หรือ iPad / on a computer or iPad.

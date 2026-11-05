@@ -16,10 +16,10 @@
   <style>
     /* Paper background with a faint ประจำยาม (Prajam Yam) lattice, drawn here at 6%. Navy and gold
        stay the brand colours; the page itself is neutral so it reads as the suite, not KhianKrub. */
-    :root { color-scheme: light dark; --bg: #fbf8f1; --text: #1e3a8a; --sub: #4a5578; --accent: #b8860b; --wait: #8a6a12; --ring: #1e3a8a;
+    :root { color-scheme: light dark; --bg: #fbf8f1; --text: #1e3a8a; --sub: #4a5578; --accent: #b8860b; --wait: #8a6a12; --ring: #1e3a8a; --card: #ffffff; --line: rgba(30, 58, 138, .16);
       --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cpath d='M24 1L47 24L24 47L1 24Z' fill='none' stroke='rgba(30,58,138,0.06)' stroke-width='1'/%3E%3Cpath transform='rotate(0 24 24)' d='M24 24C19.5 19 20 12 24 6.5C28 12 28.5 19 24 24Z' fill='none' stroke='rgba(30,58,138,0.06)' stroke-width='1.2'/%3E%3Cpath transform='rotate(90 24 24)' d='M24 24C19.5 19 20 12 24 6.5C28 12 28.5 19 24 24Z' fill='none' stroke='rgba(30,58,138,0.06)' stroke-width='1.2'/%3E%3Cpath transform='rotate(180 24 24)' d='M24 24C19.5 19 20 12 24 6.5C28 12 28.5 19 24 24Z' fill='none' stroke='rgba(30,58,138,0.06)' stroke-width='1.2'/%3E%3Cpath transform='rotate(270 24 24)' d='M24 24C19.5 19 20 12 24 6.5C28 12 28.5 19 24 24Z' fill='none' stroke='rgba(30,58,138,0.06)' stroke-width='1.2'/%3E%3Ccircle cx='24' cy='24' r='2.8' fill='rgba(184,134,11,0.1)'/%3E%3Ccircle cx='0' cy='0' r='2' fill='rgba(184,134,11,0.1)'/%3E%3Ccircle cx='48' cy='0' r='2' fill='rgba(184,134,11,0.1)'/%3E%3Ccircle cx='0' cy='48' r='2' fill='rgba(184,134,11,0.1)'/%3E%3Ccircle cx='48' cy='48' r='2' fill='rgba(184,134,11,0.1)'/%3E%3C/svg%3E"); }
     @media (prefers-color-scheme: dark) {
-      :root { --bg: #14161f; --text: #f4f1ea; --sub: #aab3cf; --accent: #f2b705; --wait: #e9c766; --ring: #ffe293;
+      :root { --bg: #14161f; --text: #f4f1ea; --sub: #aab3cf; --accent: #f2b705; --wait: #e9c766; --ring: #ffe293; --card: #1d202c; --line: rgba(244, 241, 234, .14);
         --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cpath d='M24 1L47 24L24 47L1 24Z' fill='none' stroke='rgba(242,183,5,0.06)' stroke-width='1'/%3E%3Cpath transform='rotate(0 24 24)' d='M24 24C19.5 19 20 12 24 6.5C28 12 28.5 19 24 24Z' fill='none' stroke='rgba(242,183,5,0.06)' stroke-width='1.2'/%3E%3Cpath transform='rotate(90 24 24)' d='M24 24C19.5 19 20 12 24 6.5C28 12 28.5 19 24 24Z' fill='none' stroke='rgba(242,183,5,0.06)' stroke-width='1.2'/%3E%3Cpath transform='rotate(180 24 24)' d='M24 24C19.5 19 20 12 24 6.5C28 12 28.5 19 24 24Z' fill='none' stroke='rgba(242,183,5,0.06)' stroke-width='1.2'/%3E%3Cpath transform='rotate(270 24 24)' d='M24 24C19.5 19 20 12 24 6.5C28 12 28.5 19 24 24Z' fill='none' stroke='rgba(242,183,5,0.06)' stroke-width='1.2'/%3E%3Ccircle cx='24' cy='24' r='2.8' fill='rgba(242,183,5,0.1)'/%3E%3Ccircle cx='0' cy='0' r='2' fill='rgba(242,183,5,0.1)'/%3E%3Ccircle cx='48' cy='0' r='2' fill='rgba(242,183,5,0.1)'/%3E%3Ccircle cx='0' cy='48' r='2' fill='rgba(242,183,5,0.1)'/%3E%3Ccircle cx='48' cy='48' r='2' fill='rgba(242,183,5,0.1)'/%3E%3C/svg%3E"); }
     }
     html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--text); }
@@ -63,9 +63,22 @@
     .new { position: absolute; top: 2px; right: 8px; padding: 0 7px; border-radius: 999px; font-size: 11px; font-weight: 700; line-height: 18px;
       color: #3d2a00; background: #f2b705; box-shadow: 0 0 0 2px var(--bg); }
     footer .updated { display: block; margin-bottom: 4px; }
+    footer .follow { display: block; margin-bottom: 6px; font-size: 13px; }
     /* On a phone the app's kind goes on its own line, so all three tiles keep the same height. */
     @media (max-width: 420px) { .new { right: 4px; font-size: 10px; line-height: 16px; padding: 0 6px; } .ver { font-size: 10.5px; }
       .kind .sep { display: none; } .kind .k { display: block; } }
+    /* KrubOffice for the desktop: one card under the tiles, filled from the desktop repository's latest.json
+       (at publish time by publish-kruboffice.sh and again by the script below); hidden until there is a release. */
+    .desktop { margin-top: 36px; width: 100%; max-width: 520px; }
+    .dl { display: flex; align-items: center; gap: 14px; padding: 14px 18px; border-radius: 16px; text-decoration: none; color: inherit; text-align: left;
+      background: var(--card); border: 1px solid var(--line); box-shadow: 0 1px 2px rgba(20, 22, 31, .05); }
+    .dl:hover, .dl:focus-visible { border-color: var(--text); outline: none; }
+    .dl svg { flex: none; width: 44px; height: 44px; }
+    .dl .t { flex: 1; min-width: 0; }
+    .dl .h { display: block; font-size: 16px; font-weight: 700; }
+    .dl .d { display: block; font-size: 12.5px; color: var(--sub); font-variant-numeric: tabular-nums; }
+    .dl .go { flex: none; font-size: 13px; font-weight: 700; color: #3d2a00; background: #f2b705; border-radius: 999px; padding: 6px 14px; }
+    @media (max-width: 420px) { .dl { gap: 10px; padding: 12px 14px; } .dl svg { width: 36px; height: 36px; } .dl .go { padding: 5px 10px; } }
   </style>
   <!-- Cloudflare Web Analytics: counts page views and visits without cookies or a visitor id. KrubOffice uses its own analytics site. -->
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6995071820de45148e5f4e8304902051"}'></script>
@@ -136,8 +149,19 @@
       <a class="ver" data-app="phutkrub" data-name="PhutKrub" href="https://github.com/chanonss/phutkrub-web/releases/tag/v0.5.0" target="_blank" rel="noopener" aria-label="PhutKrub รุ่น 0.5.0 อัปเดต 5 พ.ย. 2569: ดูว่ามีอะไรใหม่"><span class="v">รุ่น 0.5.0</span><time datetime="2026-11-05">อัปเดต 5 พ.ย. 2569</time></a>
     </li>
   </ul>
+  <section class="desktop" aria-label="KrubOffice สำหรับคอมพิวเตอร์" hidden>
+    <a class="dl" href="./desktop.html">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="8" width="40" height="26" rx="4" fill="#1e3a8a"/><rect x="8" y="12" width="32" height="18" rx="2" fill="#fbf8f1"/><rect x="11" y="15" width="7" height="7" rx="2" fill="#1e3a8a"/><rect x="20.5" y="15" width="7" height="7" rx="2" fill="#0f6e56"/><rect x="30" y="15" width="7" height="7" rx="2" fill="#9a3a1f"/><rect x="11" y="25" width="26" height="2.5" rx="1.25" fill="#f2b705"/><path d="M18 34h12l2 6H16z" fill="#1e3a8a"/><rect x="13" y="40" width="22" height="3" rx="1.5" fill="#1e3a8a"/></svg>
+      <span class="t">
+        <span class="h">KrubOffice สำหรับคอมพิวเตอร์</span>
+        <span class="d">macOS และ Windows <span class="dv"></span></span>
+      </span>
+      <span class="go">ดาวน์โหลด</span>
+    </a>
+  </section>
 </main>
 <footer>
+  <span class="follow">ติดตามข่าวและรุ่นใหม่ได้ที่ <a href="https://www.facebook.com/kruboffice/" target="_blank" rel="noopener">เพจ Facebook ของ KrubOffice</a></span>
   <span class="updated">อัปเดตล่าสุด <time datetime="2026-11-05">5 พ.ย. 2569</time> · <a href="https://github.com/chanonss/kruboffice-web#มีอะไรใหม่--whats-new">มีอะไรใหม่</a></span>
   ใช้ฟรีครับ · เอกสารประมวลผลในเบราว์เซอร์ของคุณ ·
   <a href="https://khiankrub.app/about.html">เกี่ยวกับ / About</a> · <a href="https://khiankrub.app/privacy.html">ความเป็นส่วนตัว / Privacy</a>
@@ -147,6 +171,7 @@
 // republishing this page, and hides "ใหม่" 14 days after an update. If a file can't be read, the line keeps what
 // was written at publish time (or stays hidden). Kept in step with fill() in publish-kruboffice.sh.
 (function () {
+  var DESKTOP_JSON = "https://raw.githubusercontent.com/chanonss/kruboffice-desktop/main/latest.json";
   var MONTHS = ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."];
   var NEW_DAYS = 14;
   function parse(iso) {
@@ -195,6 +220,22 @@
       .catch(function () {});
   });
   footer();
+
+  // KrubOffice for the desktop: the card shows once the desktop repository has a release (its latest.json).
+  var card = document.querySelector("section.desktop");
+  function desktop(info) {
+    var d = parse(info && info.date);
+    if (!card || !d || typeof info.version !== "string" || !/^[0-9][0-9A-Za-z.\-]*$/.test(info.version)) return;
+    card.querySelector(".dv").textContent = "· รุ่น " + info.version + " · อัปเดต " + thai(d);
+    card.hidden = false;
+  }
+  // What publish-kruboffice.sh wrote in is shown until the live file answers.
+  if (card && window.fetch) {
+    fetch(DESKTOP_JSON, { cache: "no-cache" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (info) { if (info) desktop(info); })
+      .catch(function () {});
+  }
 })();
 </script>
 </body>
