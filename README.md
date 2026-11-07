@@ -128,6 +128,28 @@
 
 ## มีอะไรใหม่ / What's new
 
+**7 พฤศจิกายน 2569 / 7 November 2026** (เขียนครับ 0.14.0 · พูดครับ 0.6.0 · คิดครับ 0.4.0 · KrubOffice 0.2.0)
+
+- **เขียนครับ: บอกเมื่อเครื่องไม่มีฟอนต์ที่เอกสารใช้** ช่องฟอนต์มีเครื่องหมาย ▲ สีส้ม ชี้ค้างไว้จะบอกว่าแสดงด้วยฟอนต์อะไรแทน และแถบสถานะขึ้นว่า **ไม่ได้ติดตั้งฟอนต์ N ตัว** คลิกดูรายชื่อและกด **เพิ่มฟอนต์…** ได้ TH SarabunPSK กับ TH Sarabun New ใช้แทนกันได้โดยไม่เตือน / **KhianKrub: fonts that aren't installed are flagged.** An orange ▲ in the font box, a note naming the font drawn instead, and **N fonts not installed** on the status bar with the list and **Add Font…**. TH SarabunPSK and TH Sarabun New stand in for each other without a warning.
+
+<p align="center">
+  <img src="images/khiankrub-missing-font.png" alt="KhianKrub in Thai with a Thai memo set in Angsana New: an orange warning triangle in the font box beside Angsana New, and ไม่ได้ติดตั้งฟอนต์ 1 ตัว with the same triangle on the status bar" width="100%">
+</p>
+
+- **เขียนครับ: จัดย่อหน้าภาษาไทยตรงกับ Word มากขึ้น** ย่อหน้าชิดขอบหรือกระจายแบบไทยที่ขึ้นต้นด้วยการเคาะวรรค ตัวอักษรแรกอยู่ตรงตำแหน่งเดิม ชื่อวันตรงกับวันที่ในไทย และไฟล์ .docx เก็บการตั้งค่าได้ครบขึ้น / **KhianKrub: Thai paragraphs closer to Word.** Justified and Thai Distributed paragraphs indented with spaces keep their first character in place, day names follow Thai time, and `.docx` files keep more settings.
+- **พูดครับ: มุมมองผู้นำเสนอบนเว็บใช้งานได้ครบขึ้น** ปุ่มก่อนหน้าและถัดไปใช้ได้ ดูสไลด์ทั้งหมดแล้วข้ามไปได้ และปุ่มระหว่างนำเสนอเป็นภาษาไทย / **PhutKrub: Presenter View on the web does more.** Previous and Next work, All slides lets you jump to any slide, and the show's buttons are in Thai.
+- **คิดครับ: ตัวควบคุมฟอร์ม** ปุ่ม แถบเลื่อน และปุ่มหมุนบนชีต และแก้ปัญหาโปรแกรมหยุดทำงานตอนวางทั้งคอลัมน์ / **KhitKrub: form controls**: buttons, sliders and spin buttons on the sheet, and no more crash when pasting a whole column.
+- **KrubOffice สำหรับ macOS** แอปเดียวสำหรับ Mac ชิป Apple และ Intel ผ่านการตรวจของ Apple (notarized) เปิดได้ทันที / **KrubOffice for macOS**: one app for Apple silicon and Intel Macs, notarized by Apple, so it opens without warnings.
+- **KrubOffice บนเครื่อง** คัดลอกไปวางในโปรแกรมอื่นแล้วรูปแบบยังอยู่มากขึ้น (RTF) และหน้าต่างที่เคยอยู่บนจอที่ถอดออกไปแล้วกลับมาอยู่บนจอหลัก / **KrubOffice on the desktop**: copies keep more formatting in other programs (RTF), and a window left on a monitor that's gone opens on the main one.
+
+**6 พฤศจิกายน 2569 / 6 November 2026**
+
+- **เขียนครับ: หัวกระดาษและท้ายกระดาษแยกตามส่วน** ดับเบิลคลิกที่หัวกระดาษหรือท้ายกระดาษ แท็บ **หัวกระดาษและท้ายกระดาษ** จะปรากฏขึ้น ปิดปุ่ม **เชื่อมกับส่วนก่อนหน้า** แล้วส่วนนั้นจะมีหัวกระดาษ ท้ายกระดาษ และเลขหน้าของตัวเอง เช่น ส่วนนำเป็นเลขโรมัน i, ii แล้วบทที่ 1 เริ่มหน้า 1 หรือใช้เลขไทย ๑, ๒, ๓ บันทึกเป็น `.docx` แล้วเปิดใน Word ได้เหมือนเดิม ใช้ได้ทั้งบนเว็บและใน KrubOffice สำหรับ Windows / **KhianKrub: headers, footers and page numbers by section.** Double-click a header or footer and the **Header & Footer** tab appears. Turn off **Link to Previous** and the section gets its own header, footer and page numbers: front matter in i, ii, then chapter 1 from page 1, or Thai digits ๑, ๒, ๓. It saves to `.docx` and opens the same in Word. On the web and in KrubOffice for Windows.
+
+<p align="center">
+  <img src="images/khiankrub-header-footer.png" alt="KhianKrub in Thai editing a footer: the หัวกระดาษและท้ายกระดาษ tab with เชื่อมกับส่วนก่อนหน้า turned off, and section 2's pages tagged เหมือนส่วนก่อนหน้า for the header, their footers numbered 1 and 2" width="100%">
+</p>
+
 **5 พฤศจิกายน 2569 / 5 November 2026**
 
 - **KrubOffice สำหรับ Windows (รุ่นทดลอง)** ติดตั้งครั้งเดียว ได้เขียนครับ คิดครับ และพูดครับในแอปเดียว ใช้ได้โดยไม่ต้องเปิดเบราว์เซอร์ ดับเบิลคลิกไฟล์ .docx .xlsx หรือ .pptx แล้ว KrubOffice เลือกโปรแกรมให้เอง เปิดโดยไม่เลือกไฟล์จะเห็นหน้าเริ่มต้นพร้อมไฟล์ล่าสุดของทั้งสามโปรแกรม ดาวน์โหลดและดูวิธีติดตั้งได้ที่ [kruboffice.app/desktop.html](https://kruboffice.app/desktop.html) รุ่นสำหรับ macOS จะตามมา / **KrubOffice for Windows (beta).** One install gives you KhianKrub, KhitKrub and PhutKrub in one app, no browser needed. Double-click a .docx, .xlsx or .pptx file and KrubOffice opens the right program; opened on its own, it shows a start page with the recent files of all three. Download and install steps: [kruboffice.app/desktop.html](https://kruboffice.app/desktop.html). macOS comes later.
